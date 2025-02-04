@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-04T12:41:18 IST" name="Default suite" finished-at="2025-02-04T12:42:09 IST" duration-ms="50845">
+    <groups>
+    </groups>
+    <test started-at="2025-02-04T12:41:18 IST" name="Default test" finished-at="2025-02-04T12:42:09 IST" duration-ms="50845">
+      <class name="userTestScripts.userPostApi">
+        <test-method signature="usercreateWitList()[pri:0, instance:userTestScripts.userPostApi@3c46e67a]" started-at="2025-02-04T12:41:18 IST" name="usercreateWitList" finished-at="2025-02-04T12:42:09 IST" duration-ms="50772" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">
+            <message>
+              <![CDATA[Unrecognized field "Post:listOfUsers" (class pageObjectModel.ApiRequest), not marked as ignorable (6 known properties: "method", "body", "apiCall", "url", "response", "request"])
+ at [Source: (File); line: 2, column: 23] (through reference chain: pageObjectModel.ApiRequest["Post:listOfUsers"])]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "Post:listOfUsers" (class pageObjectModel.ApiRequest), not marked as ignorable (6 known properties: "method", "body", "apiCall", "url", "response", "request"])
+ at [Source: (File); line: 2, column: 23] (through reference chain: pageObjectModel.ApiRequest["Post:listOfUsers"])
+at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)
+at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)
+at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)
+at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3637)
+at Utilis.JsonUtil.readJsonFile1(JsonUtil.java:24)
+at Utilis.ApiUtil2.sendRequest(ApiUtil2.java:25)
+at userTestScripts.userPostApi.usercreateWitList(userPostApi.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercreateWitList -->
+      </class> <!-- userTestScripts.userPostApi -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

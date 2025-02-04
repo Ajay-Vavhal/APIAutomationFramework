@@ -1,0 +1,28 @@
+{
+	"Post:listOfUsers": {
+		"request": {
+			"url": "https://petstore.swagger.io/v2/user/createWithList",
+			"headers": {
+				"Content-Type": "application/json",
+				"Authorization": "Bearer {token}"
+			},
+			"body": [
+				{
+					"id": 0,
+					"username": "string",
+					"firstName": "string",
+					"lastName": "string",
+					"email": "string",
+					"password": "string",
+					"phone": "string",
+					"userStatus": 0
+				}
+			]
+		},
+		"response": {
+			"code": 200,
+			"type": "unknown",
+			"message": "ok"
+		}
+	}
+}
