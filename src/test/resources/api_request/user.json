@@ -9,7 +9,7 @@
 			"body": [
 				{
 					"id": 0,
-					"username": "string",
+					"username": "test1",
 					"firstName": "string",
 					"lastName": "string",
 					"email": "string",
@@ -23,6 +23,20 @@
 			"code": 200,
 			"type": "unknown",
 			"message": "ok"
+		}
+	},
+	"Get:getUser": {
+		"request": {
+			"url": "https://petstore.swagger.io/v2/user/test1",
+			"headers": {
+				"Content-Type": "application/json",
+				"Authorization": "Bearer {token}"
+			},
+			"body": {
+			}
+		},
+		"response": {
+			"code": 200
 		}
 	}
 }
