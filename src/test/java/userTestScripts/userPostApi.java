@@ -29,6 +29,7 @@ public class userPostApi extends BaseTest {
 		//Assert.assertEquals(ApiUtil.getJsonObjresponseBody(response.getBody().asString()),ApiUtil.apiExpectedResponse());
 		System.out.println(ApiUtil.apiRequestSent());
 		System.out.println(ApiUtil.getExpectedResponse());
+		
 		System.out.println(ApiUtil.getJsonNodeResponseBody(response.getBody().asString()));
 	}
 }
