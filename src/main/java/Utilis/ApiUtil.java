@@ -13,14 +13,17 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class ApiUtil {
-
+public class ApiUtil {	
 	private static final String BASE_PATH = "src/test/resources/api_request/";
 	private static String authToken; // Static variable to store the token
 	private static long tokenExpiryTime; // Timestamp when the token expires
 	private static final Object tokenLock = new Object(); // For thread safety
 
-	@SuppressWarnings("unchecked")
+	private ApiUtil() {
+		
+	}
+	
+ 	@SuppressWarnings("unchecked")
 	public static Response sendRequest(String apiCall,String fileName) throws IOException {
 		synchronized(tokenLock) {
 			JsonHelper.setApiName(apiCall);
